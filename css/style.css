@@ -14,6 +14,7 @@ $breakpoint arguement choices:
   box-sizing: inherit; }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Arvo", serif; }
@@ -248,7 +249,7 @@ html {
   .projectSection__showcase {
     display: grid;
     grid-template-columns: repeat(3, minmax(20rem, 1fr));
-    grid-template-rows: repeat(2, minmax(20rem, 1fr));
+    grid-template-rows: repeat(2, minmax(25rem, 1fr));
     grid-gap: 3rem;
     margin-bottom: 10rem; }
     @media (max-width: 56.25em) {
@@ -326,6 +327,50 @@ html {
               font-size: 3rem; } }
           .projectSection__showcase_card_details_usedContainer_list_item {
             margin-right: 4px; }
+
+.aboutSection {
+  width: 100%;
+  height: 90vh;
+  background-color: #f8f7f7; }
+  .aboutSection__container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    .aboutSection__container_heading {
+      font-size: 3rem;
+      color: lightgrey;
+      border-bottom: 3px solid lightgrey;
+      justify-self: flex-start;
+      align-self: flex-start; }
+  .aboutSection__infoContainer {
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Libre Franklin', sans-serif; }
+    @media (max-width: 75em) {
+      .aboutSection__infoContainer {
+        width: 70%;
+        margin-top: 5rem; } }
+    @media (max-width: 75em) {
+      .aboutSection__infoContainer {
+        width: 80%;
+        margin-top: 5rem; } }
+    @media (max-width: 37.5em) {
+      .aboutSection__infoContainer {
+        width: 100%;
+        margin-top: 5rem; } }
+    .aboutSection__infoContainer_heading {
+      font-size: 3rem;
+      margin: 2rem 0;
+      color: #9c9c9c; }
+    .aboutSection__infoContainer_p {
+      font-size: 2rem;
+      margin-top: 2rem;
+      line-height: 1.6;
+      color: #9c9c9c; }
 
 @keyframes fadeIn {
   0% {

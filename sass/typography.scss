@@ -39,7 +39,7 @@
 
 .skillSet__card_description {
     font-size: 1.8rem;
-    color: rgb(156, 156, 156);
+    color: $color-secondary;
     margin-top: 1.5rem;
 
     @include responsive(phone-small) {

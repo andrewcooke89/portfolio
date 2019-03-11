@@ -2,12 +2,14 @@
     width: 90%;
     margin: 0 auto;
 
+
+
     
     &__showcase {
         
         display: grid;
         grid-template-columns: repeat(3, minmax(20rem, 1fr));
-        grid-template-rows: repeat(2, minmax(20rem, 1fr));
+        grid-template-rows: repeat(2, minmax(25rem, 1fr));
         grid-gap: 3rem;
         margin-bottom: 10rem;
 
