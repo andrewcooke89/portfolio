@@ -1,0 +1,90 @@
+.skillSet {
+    background-color: rgb(248, 247, 247);
+    height: 100vh;
+    position: relative;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+
+    &__container {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+        @include responsive(tab-land) {
+            width: 80%;
+        }
+        
+    }
+
+    &__hr {
+        position: absolute;
+        top: 40%;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        transform: translateY(5rem);
+
+        &_item {
+          
+
+            &_icon {
+                height: 8rem;
+                width: 8rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__cardContainer {
+        position: absolute;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    &__card {
+        
+        display: flex;
+        padding: 2rem;
+        // border: 2px solid white;
+        // box-shadow: 3px 4px 3px rgb(190, 190, 190);
+        border-radius: 5px;
+        width: 90%;
+        margin-bottom: 4rem;
+
+        &_imageContainer {
+            width: 6rem;
+        }
+
+
+        &_description {
+            padding: 0 4rem;   
+            
+            
+        }
+
+        &_icon {
+            margin-top: 1rem;
+            width: 5rem;
+            height: 5rem;
+            
+            &_responsive {
+                display: flex;
+                transform: translateY(-1.5rem);
+            }
+        }
+    }
+}

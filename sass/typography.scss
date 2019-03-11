@@ -1,0 +1,54 @@
+.landingSection__heading {
+    color: $color-primary;
+    font-size: 3.5rem;
+    animation: fadeIn ease-in 1.5s;
+
+    @include responsive(phone) {
+        font-size: 2.5rem;
+        transform: translateY(-18rem)
+    }
+}
+
+.landingSection__blurb {
+    animation: fadeIn ease-in 1.5s;
+    margin-top: 1rem;
+    color: $color-primary;
+    font-size: 2rem;
+    text-align: center;
+
+    @include responsive(tab-port) {
+        width: 40rem;
+    }
+
+    @include responsive(phone) {
+        width: 30rem;
+        transform: translateY(-18rem);
+    }
+
+    
+}
+
+.skillSet__heading {
+    color: $color-primary;
+    font-size: 2.5rem;
+    align-self: flex-start;
+    border-bottom: 1px solid #ccc;
+    margin-top: 4rem;
+}
+
+
+.skillSet__card_description {
+    font-size: 1.8rem;
+    color: rgb(156, 156, 156);
+    margin-top: 1.5rem;
+
+    @include responsive(phone-small) {
+        margin-top: .75rem;
+    }
+}
+
+.projectSection__heading {
+    font-size: 3rem;
+    color: $color-primary;
+    margin-bottom: 2rem;
+}

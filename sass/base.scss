@@ -1,0 +1,33 @@
+// color variables
+$color-primary: lightgrey ;
+// font variables
+$font-primary:  'Arvo', serif;
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: $font-primary;
+
+    @include responsive(tab-land) {
+        font-size: 56.25%;  //1 rem = 9px
+    }
+
+    
+    @include responsive(tab-port) {
+        font-size: 50%;  //1 rem = 8px
+    }
+    
+    @include responsive(big-desktop) {
+        font-size: 75%; //1 rem = 12px
+    }
+}

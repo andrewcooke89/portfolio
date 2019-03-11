@@ -1,0 +1,179 @@
+.landingSection {
+   
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__lineDown {
+        width: 1px;
+        height: 20rem;
+        border: 1px solid $color-primary;
+
+       
+    }
+
+    &__lineAcross {
+        width: 20rem;
+        height: 1px;
+        border: 1px solid $color-primary;
+    }
+
+    &__line1 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        animation: inFromLeft .5s ease-in;
+        transform: translateX(-4rem);
+
+        @include responsive(tab-land) {
+            left: 10%;
+        }
+
+        @include responsive(phone) {
+            transform: translateY(-10rem);
+        }
+    }
+
+    &__line2 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        animation: inFromTop .5s ease-in;
+        transform: translatey(-4rem);
+
+        @include responsive(tab-land) {
+            left: 10%;
+        }
+
+        @include responsive(phone) {
+            transform: translateY(-10rem);
+        }
+    }
+
+    &__line3 {
+        position: absolute;
+        bottom: 20%;
+        right: 20%;
+        animation: inFromRight .5s ease-in;
+        transform: translateX(4rem);
+
+        @include responsive(tab-land) {
+            right: 10%;
+        }
+        @include responsive(phone) {
+            transform: translateY(-32rem);
+        }
+    }
+
+    &__line4 {
+        position: absolute;
+        bottom: 20%;
+        right: 20%;
+        animation: inFromBottom .5s ease-in;
+        transform: translateY(4rem);
+
+        @include responsive(tab-land) {
+            right: 10%;
+        }
+
+        @include responsive(phone) {
+            transform: translateY(-32rem);
+        }
+    }
+
+    &__textContainer {
+        width: 70rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include responsive(phone) {
+            width: 40rem;
+        }
+
+
+    }
+
+    .landingSection__mobileGithub {
+        display: none;
+
+        @include responsive(phone) {
+            display: block;
+            
+        }
+
+    }
+
+    &__links {
+        
+        list-style: none;
+        display: flex;
+
+        &_container {
+            position: absolute; 
+            bottom: 3rem;
+
+            @include responsive(phone) {
+                bottom: 25rem;
+           
+            }
+        }
+
+        &_link {
+            font-size: 2rem;
+            color: $color-primary;
+            cursor: pointer;
+            padding: 1rem;
+            text-decoration: none;
+            
+            
+            &_svg {
+                cursor: pointer;
+                height: 3rem;
+                width: 3rem;
+                transform: translateY(-1rem) translateX(.5rem);
+            }
+            
+            @include responsive(phone) {
+                font-size: 1.6rem;
+            }
+
+            &_desktopGithub {
+                @include responsive(phone) {
+                    display: none;
+                }
+            }
+            
+        }
+
+        
+
+    }
+    
+    &__hr {   
+        position: absolute;
+        bottom: 0rem;
+
+        @include responsive(phone) {
+            bottom: 20rem;
+        }
+    }
+
+    &__scrollDown {
+        display: none;
+
+        @include responsive(phone) {
+            position: absolute;
+            display: block;
+            bottom: 5rem;
+            left: 48%;
+        }
+
+    }
+    
+}
