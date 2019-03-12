@@ -4,55 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- style sheet from scss -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <!-- scroll annimations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
     <!-- LANDING SECTION -->
+    <header>
     <section class="landingSection" id="landingSection">
 
-        <div class="landingSection__line1 landingSection__lineAcross"></div>
-        <div class="landingSection__line2 landingSection__lineDown"></div>
+            <div class="landingSection__line1 landingSection__lineAcross"></div>
+            <div class="landingSection__line2 landingSection__lineDown"></div>
 
-        <div class="landingSection__textContainer">
-            <h1 class="landingSection__heading">Frontend Web Developer</h1>
-            <p class="landingSection__blurb">Cornwall based web developer bringing UX focused scalable websites and web applications to your monitor</p>
-        </div>
+            <div class="landingSection__textContainer">
+                <h1 class="landingSection__heading">Frontend Web Developer</h1>
+                <p class="landingSection__blurb">Cornwall based web developer bringing UX focused scalable websites and web applications to your monitor</p>
+            </div>
 
-        <a class="landingSection__mobileGithub" href="https://github.com/andrewcooke89" target="_blank" >
-            <img src="css/images/github.svg" class="landingSection__mobileGithub_icon">        
-        </a>
+            <a class="landingSection__mobileGithub" href="https://github.com/andrewcooke89" target="_blank" >
+                <img src="css/images/github.svg" class="landingSection__mobileGithub_icon">        
+            </a>
 
-        <div class="landingSection__links_container">
-            <ul class="landingSection__links">
-                <li ><a href="#skillSet" class="landingSection__links_link">Skill Set</a></li>
-                <li ><a href="#projects" class="landingSection__links_link">Projects</a></li>
-                <li ><a href="#blog" class="landingSection__links_link">Blog</a></li>
-                <li ><a href="#about" class="landingSection__links_link">About Me</a></li>
-                <li ><a href="#contact" class="landingSection__links_link">Contact</a></li>
-                <li class="landingSection__links_link_desktopGithub">
-                    <a href="https://github.com/andrewcooke89" target="_blank" >
-                        <img src="css/images/github.svg" class="landingSection__links_link_svg">        
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        
-        <div class="landingSection__line3 landingSection__lineAcross"></div> 
-        <div class="landingSection__line4 landingSection__lineDown"></div> 
+            <div class="landingSection__links_container">
+                <ul class="landingSection__links">
+                    <li ><a href="#skillSet" class="landingSection__links_link">Skill Set</a></li>
+                    <li ><a href="#projects" class="landingSection__links_link">Projects</a></li>
+                    <li ><a href="#blog" class="landingSection__links_link">Blog</a></li>
+                    <li ><a href="#about" class="landingSection__links_link">About Me</a></li>
+                    <li ><a href="#contact" class="landingSection__links_link">Contact</a></li>
+                    <li class="landingSection__links_link_desktopGithub">
+                        <a href="https://github.com/andrewcooke89" target="_blank" >
+                            <img src="css/images/github.svg" class="landingSection__links_link_svg">        
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="landingSection__line3 landingSection__lineAcross"></div> 
+            <div class="landingSection__line4 landingSection__lineDown"></div> 
 
-        <hr class="hr landingSection__hr">
+            <hr class="hr landingSection__hr">
 
-        <a href="#skillSet">
-            <img class="landingSection__scrollDown" src="css/images/arrow-down2.svg" alt="arrow down">
-        </a>
-        
+            <a href="#skillSet">
+                <img class="landingSection__scrollDown" src="css/images/arrow-down2.svg" alt="arrow down">
+            </a>
+            
 
     </section>
+    </header>
 
     <!-- SKILL SET SECTION -->
     <section id="skillSet">
@@ -96,7 +102,7 @@
                 <hr class="hr skillSet__hr">
 
                 <div class="skillSet__cardContainer">
-                    <div class="skillSet__card">
+                    <div data-aos="fade-right" class="skillSet__card">
                         <div class="skillSet_card_imageContainer">
                             <img 
                                 src="css/images/rocket.svg" 
@@ -111,7 +117,7 @@
                         </div>
                     </div>
 
-                    <div class="skillSet__card">
+                    <div data-aos="fade-left" class="skillSet__card">
                         <div class="skillSet__card_headerContainer">
                             <div class="skillSet__card_icon skillSet__card_icon_responsive">
                                 <img 
@@ -133,7 +139,7 @@
                         </div>
                     </div>
 
-                    <div class="skillSet__card">
+                    <div data-aos="fade-right" class="skillSet__card">
                         <div class="skillSet_card_imageContainer">
                             <img 
                                 src="css/images/shield.svg" 
@@ -143,7 +149,7 @@
                         </div>  
                         <div class="skillSet__card_description">
                             <p>
-                                Test driven development for reliable 
+                                Test driven development for reliability 
                             </p>
                         </div>
                     </div>
@@ -153,13 +159,15 @@
         </div>
     </section>
 
+
+    <!-- projects section -->
         
     <section id="projects">
         <div class="projectSection">
             <h2 class="projectSection__heading">Projects</h2>
 
             <div class="projectSection__showcase">
-                <div class="projectSection__showcase_card">
+                <div data-aos-duration="1000" data-aos="zoom-in" class="projectSection__showcase_card">
                     <div class="projectSection__showcase_card_detailsContainer">
                         <h3 class="projectSection__showcase_card_details_heading">
                             FlixDb
@@ -191,7 +199,7 @@
                     </div>
                 </div>
 
-                <div class="projectSection__showcase_card">
+                <div data-aos-duration="1000" data-aos="zoom-in" class="projectSection__showcase_card">
                     <div class="projectSection__showcase_card_detailsContainer">
                         <h3 class="projectSection__showcase_card_details_heading">
                             Project Name
@@ -226,7 +234,7 @@
                     </div>
                 </div>
 
-                <div class="projectSection__showcase_card">
+                <div data-aos-duration="1000" data-aos="zoom-in" class="projectSection__showcase_card">
                     <div class="projectSection__showcase_card_detailsContainer">
                         <h3 class="projectSection__showcase_card_details_heading">
                             Project Name
@@ -261,7 +269,7 @@
                     </div>
                 </div>
 
-                <div class="projectSection__showcase_card">
+                <div data-aos-duration="1000" data-aos="zoom-in" class="projectSection__showcase_card">
                     <div class="projectSection__showcase_card_detailsContainer">
                         <h3 class="projectSection__showcase_card_details_heading">
                             Project Name
@@ -296,7 +304,7 @@
                     </div>
                 </div>
 
-                <div class="projectSection__showcase_card">
+                <div data-aos-duration="1000" data-aos="zoom-in" class="projectSection__showcase_card">
                     <div class="projectSection__showcase_card_detailsContainer">
                         <h3 class="projectSection__showcase_card_details_heading">
                             Project Name
@@ -331,7 +339,7 @@
                     </div>
                 </div>
 
-                <div class="projectSection__showcase_card">
+                <div data-aos-duration="1000" data-aos="zoom-in" class="projectSection__showcase_card">
                     <div class="projectSection__showcase_card_detailsContainer">
                         <h3 class="projectSection__showcase_card_details_heading">
                             Project Name
@@ -370,9 +378,13 @@
      
     </section>
 
+    <!-- blog section -->
+
     <section id="blog">
         
     </section>
+
+    <!-- about section -->
 
     <section id="about">
         <div class="aboutSection">
@@ -391,25 +403,35 @@
                         I design my projects with complete UX in mind, whether that is clean simple designs being produced for the end user or equally clean readable code for other developers
                     </p>
                 </div>
+                <a class="aboutSection__container_upArrow" href="#landingSection">
+                    <img src="css/images/arrow-up2.svg" alt="">
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- contact section/footer -->
+
     <section id="contact">
-        <div class="contactSection__container">
-            <a href = "mailto: cooke.andrew.p@gmail.com">
-                <img src="css/images/mail.svg" alt="email">
-            </a>
+        <footer>
+            <div class="contactSection__container">
+                <a href = "mailto: cooke.andrew.p@gmail.com">
+                    <img src="css/images/mail.svg" alt="email">
+                </a>
 
-            <h3 class="contactSection__container_heading">Contact</h3>
+                <h3 class="contactSection__container_heading">Contact</h3>
 
-            <a href="https://www.linkedin.com/feed/">
-                <img src="css/images/linkedin.svg" alt="linkedin">
-            </a>
-        </div>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <img src="css/images/linkedin.svg" alt="linkedin">
+                </a>
+            </div>
+        </footer>
     </section>
 
-   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
     
 </body>

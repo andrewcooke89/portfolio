@@ -368,6 +368,9 @@ html {
     flex-direction: column;
     justify-content: center;
     align-content: center; }
+    .aboutSection__container_upArrow {
+      margin: 0 auto;
+      margin-top: 8rem; }
   .aboutSection__infoContainer {
     width: 60%;
     margin: 0 auto;

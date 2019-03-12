@@ -17,6 +17,11 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
+
+        &_upArrow {
+            margin: 0 auto;
+            margin-top: 8rem;
+        }
     }
 
     &__infoContainer {
