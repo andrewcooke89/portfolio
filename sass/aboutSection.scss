@@ -3,6 +3,11 @@
     height: 90vh;
     background-color: rgb(248, 247, 247);
 
+    @include responsive(phone) {
+        height: 100vh;
+    }
+
+
     &__container {
         width: 90%;
         height: 100%;
@@ -12,14 +17,6 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
-    
-        &_heading {
-            font-size: 3rem;
-            color: $color-primary;
-            border-bottom: 3px solid $color-primary;
-            justify-self: flex-start;
-            align-self: flex-start;
-        }
     }
 
     &__infoContainer {
@@ -40,19 +37,6 @@
         @include responsive(phone) {
             width: 100%;
             margin-top: 5rem;
-        }
-
-        &_heading {
-            font-size: 3rem;
-            margin: 2rem 0;
-            color: $color-secondary;
-        }
-
-        &_p {
-            font-size: 2rem;
-            margin-top: 2rem;
-            line-height: 1.6;
-            color: $color-secondary;
         }
     }
 }

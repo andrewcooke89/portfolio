@@ -31,3 +31,9 @@ $breakpoint arguement choices:
     }
 }
 
+@mixin heading {
+    color: $color-primary;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #ccc;
+}
+

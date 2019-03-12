@@ -29,10 +29,8 @@
 }
 
 .skillSet__heading {
-    color: $color-primary;
-    font-size: 2.5rem;
+    @include heading; 
     align-self: flex-start;
-    border-bottom: 1px solid #ccc;
     margin-top: 4rem;
 }
 
@@ -48,7 +46,31 @@
 }
 
 .projectSection__heading {
-    font-size: 3rem;
-    color: $color-primary;
+    @include heading; 
     margin-bottom: 2rem;
+    width: 10.5rem;
+}
+
+.aboutSection__infoContainer_heading {
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: $color-secondary;
+}
+
+.aboutSection__infoContainer_p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 1.6;
+    color: $color-secondary;
+}
+
+.aboutSection__container_heading {
+    @include heading; 
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.contactSection__container_heading {
+    @include heading;
+
 }
