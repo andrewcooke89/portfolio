@@ -16,8 +16,7 @@ $breakpoint arguement choices:
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-size: 62.5%;
-  font-family: "Arvo", serif; }
+  font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -71,7 +70,7 @@ html {
   font-size: 2.5rem;
   border-bottom: 1px solid #ccc;
   margin-bottom: 2rem;
-  width: 10.5rem; }
+  width: 9rem; }
 
 .aboutSection__infoContainer_heading {
   font-size: 3rem;
@@ -271,6 +270,9 @@ html {
 .projectSection {
   width: 90%;
   margin: 0 auto; }
+  @media (min-width: 112.5em) {
+    .projectSection {
+      width: 80%; } }
   .projectSection__showcase {
     display: grid;
     grid-template-columns: repeat(3, minmax(20rem, 1fr));
@@ -285,13 +287,24 @@ html {
       .projectSection__showcase {
         grid-template-columns: minmax(20rem, 1fr);
         grid-template-rows: repeat(6, minmax(35rem, 1fr)); } }
+    @media (min-width: 112.5em) {
+      .projectSection__showcase {
+        grid-gap: 8rem; } }
     .projectSection__showcase_card {
       background-image: url(/css/images/flixdb.jpg);
-      border-radius: 5px; }
+      border-radius: 5px;
+      background-size: cover; }
+      .projectSection__showcase_card_flix {
+        background-image: url(/css/images/flixdb.jpg); }
+      .projectSection__showcase_card_nexter {
+        background-image: url(/css/images/nexter.jpg); }
+      .projectSection__showcase_card_burger {
+        background-image: url(/css/images/burgerBuilder.jpg); }
       .projectSection__showcase_card:hover .projectSection__showcase_card_detailsContainer {
         visibility: visible;
         opacity: 1;
-        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/css/images/flixdb.jpg); }
+        background-size: cover;
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); }
       .projectSection__showcase_card_detailsContainer {
         transition: .7s;
         opacity: 0;
@@ -368,6 +381,9 @@ html {
     flex-direction: column;
     justify-content: center;
     align-content: center; }
+    @media (min-width: 112.5em) {
+      .aboutSection__container {
+        width: 80%; } }
     .aboutSection__container_upArrow {
       margin: 0 auto;
       margin-top: 8rem; }

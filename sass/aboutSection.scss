@@ -18,6 +18,10 @@
         justify-content: center;
         align-content: center;
 
+        @include responsive(big-desktop) {
+            width: 80%;
+        }
+
         &_upArrow {
             margin: 0 auto;
             margin-top: 8rem;

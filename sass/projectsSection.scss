@@ -3,7 +3,9 @@
     margin: 0 auto;
 
 
-
+    @include responsive(big-desktop) {
+        width: 80%;
+    }
     
     &__showcase {
         
@@ -23,22 +25,37 @@
             grid-template-rows: repeat(6, minmax(35rem, 1fr));
         }
 
+        @include responsive(big-desktop) {
+            grid-gap: 8rem;
+        }
+
 
         &_card {
             background-image: url(/css/images/flixdb.jpg);                        
             border-radius: 5px;
+            background-size: cover;
+            
+            &_flix {
+                background-image: url(/css/images/flixdb.jpg);     
+            }
+            &_nexter {
+                background-image: url(/css/images/nexter.jpg);     
+            }
+            &_burger {
+                background-image: url(/css/images/burgerBuilder.jpg);
+            }
             
 
             &:hover &_detailsContainer {
                 
                 visibility: visible;
                 opacity: 1;
-
+                
+                background-size: cover;
                 background-image: linear-gradient(
                 to right bottom,
                 rgba(black, 0.6),
-                rgba(black, 0.6)), 
-                url(/css/images/flixdb.jpg);
+                rgba(black, 0.6));
             }
 
             &_detailsContainer {
