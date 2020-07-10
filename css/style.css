@@ -28,7 +28,7 @@ html {
       font-size: 75%; } }
 
 .landingSection__heading {
-  color: lightgrey;
+  color: #9b9b9b;
   font-size: 3.5rem;
   animation: fadeIn ease-in 1.5s; }
   @media (max-width: 37.5em) {
@@ -39,7 +39,7 @@ html {
 .landingSection__blurb {
   animation: fadeIn ease-in 1.5s;
   margin-top: 1rem;
-  color: lightgrey;
+  color: #9b9b9b;
   font-size: 2rem;
   text-align: center; }
   @media (max-width: 56.25em) {
@@ -51,7 +51,7 @@ html {
       transform: translateY(-18rem); } }
 
 .skillSet__heading {
-  color: lightgrey;
+  color: #9b9b9b;
   font-size: 2.5rem;
   border-bottom: 1px solid #ccc;
   align-self: flex-start;
@@ -59,14 +59,14 @@ html {
 
 .skillSet__card_description {
   font-size: 1.8rem;
-  color: #9c9c9c;
+  color: #8f8e8e;
   margin-top: 1.5rem; }
   @media (max-width: 24.75em) {
     .skillSet__card_description {
       margin-top: .75rem; } }
 
 .projectSection__heading {
-  color: lightgrey;
+  color: #9b9b9b;
   font-size: 2.5rem;
   border-bottom: 1px solid #ccc;
   margin-bottom: 2rem;
@@ -75,23 +75,23 @@ html {
 .aboutSection__infoContainer_heading {
   font-size: 3rem;
   margin: 2rem 0;
-  color: #9c9c9c; }
+  color: #8f8e8e; }
 
 .aboutSection__infoContainer_p {
   font-size: 2rem;
   margin-top: 2rem;
   line-height: 1.6;
-  color: #9c9c9c; }
+  color: #8f8e8e; }
 
 .aboutSection__container_heading {
-  color: lightgrey;
+  color: #9b9b9b;
   font-size: 2.5rem;
   border-bottom: 1px solid #ccc;
   justify-self: flex-start;
   align-self: flex-start; }
 
 .contactSection__container_heading {
-  color: lightgrey;
+  color: #9b9b9b;
   font-size: 2.5rem;
   border-bottom: 1px solid #ccc; }
 
@@ -105,11 +105,11 @@ html {
   .landingSection__lineDown {
     width: 1px;
     height: 20rem;
-    border: 1px solid lightgrey; }
+    border: 1px solid #9b9b9b; }
   .landingSection__lineAcross {
     width: 20rem;
     height: 1px;
-    border: 1px solid lightgrey; }
+    border: 1px solid #9b9b9b; }
   .landingSection__line1 {
     position: absolute;
     top: 20%;
@@ -182,7 +182,7 @@ html {
           bottom: 25rem; } }
     .landingSection__links_link {
       font-size: 2rem;
-      color: lightgrey;
+      color: #9b9b9b;
       cursor: pointer;
       padding: 1rem;
       text-decoration: none; }
@@ -296,10 +296,14 @@ html {
       background-size: cover; }
       .projectSection__showcase_card_flix {
         background-image: url(/css/images/flixdb.jpg); }
-      .projectSection__showcase_card_nexter {
-        background-image: url(/css/images/nexter.jpg); }
-      .projectSection__showcase_card_burger {
-        background-image: url(/css/images/burgerBuilder.jpg); }
+      .projectSection__showcase_card_vegan {
+        background-image: url(/css/images/wecanvegan.png); }
+      .projectSection__showcase_card_tripwiser {
+        background-image: url(/css/images/tripWiser.png); }
+      .projectSection__showcase_card_meet {
+        background-image: url(/css/images/meet.png); }
+      .projectSection__showcase_card_portfolio {
+        background-image: url(/css/images/portfolio.png); }
       .projectSection__showcase_card:hover .projectSection__showcase_card_detailsContainer {
         visibility: visible;
         opacity: 1;
