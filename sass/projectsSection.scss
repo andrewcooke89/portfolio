@@ -30,10 +30,10 @@
         }
 
 
-        &_card {
-            background-image: url(/css/images/flixdb.jpg);                        
+        &_card {                   
             border-radius: 5px;
             background-size: cover;
+            box-shadow: 0 0 10px black;
             
             &_flix {
                 background-image: url(/css/images/flixdb.jpg);     

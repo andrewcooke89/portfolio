@@ -291,9 +291,9 @@ html {
       .projectSection__showcase {
         grid-gap: 8rem; } }
     .projectSection__showcase_card {
-      background-image: url(/css/images/flixdb.jpg);
       border-radius: 5px;
-      background-size: cover; }
+      background-size: cover;
+      box-shadow: 0 0 10px black; }
       .projectSection__showcase_card_flix {
         background-image: url(/css/images/flixdb.jpg); }
       .projectSection__showcase_card_vegan {
