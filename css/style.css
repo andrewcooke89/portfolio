@@ -215,9 +215,7 @@ html {
 .skillSet {
   background-color: #f8f7f7;
   height: 100vh;
-  position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%); }
+  position: relative; }
   .skillSet__container {
     width: 60%;
     margin: 0 auto;
@@ -269,7 +267,8 @@ html {
 
 .projectSection {
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 70px; }
   @media (min-width: 112.5em) {
     .projectSection {
       width: 80%; } }
